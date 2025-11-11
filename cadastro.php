@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
     $cpf = $_POST['cpf']
 
-    $sql = "INSERT INTO clientes (nome, cpf) VALUES ('$nome', '$cpf')";
+    $mysql = "INSERT INTO clientes (nome, cpf) VALUES ('$nome', '$cpf')";
     mysqli_query($conn, $sql);
 
     header('Location: index.php');
