@@ -18,8 +18,8 @@ $result = mysqli_query($conn, $sql);
     <tr><th>ID</th><th>Nome</th><th>CPF</th><th>Ações</th></tr>
     <?php
 
-    if ($results) {
-      while ($row = mysqli_fetch_assoc($results)) {
+    if ($result) {
+      while ($row = mysqli_fetch_assoc($result)) {
         echo '<tr>';
         echo '<td>' . $row['id'] . '</td>';
         echo '<td>' . $row['nome'] . '</td>';
